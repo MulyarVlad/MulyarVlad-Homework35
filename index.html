@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form action="" method="get" class="form-example"> 
+        <div class="form-example">
+            <label class="full-name" for="full-name">Enter your full name: </label>
+            <input type="text" name="name" id="name" required>
+        </div> 
+        <div class="form-example">
+            <label for="age">Enter your date of birth: </label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        
+        <p >Choose your sex:</p>
+
+        <input type="radio" id="man" name="sex" value="Man">
+         <label for="man">Male</label><br>
+         <input class="sex" type="radio" id="woman" name="sex" value="Woman">
+         <label for="woman">Female</label><br>
+
+
+    <label for="city">Choose your city:</label>
+    <select class="city" id="city" name="city">
+        <option value="Odesa">Odesa</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Kharkov">Kharkov</option>
+        <option value="Dnipro">Dnipro</option>
+    </select>
+
+    <br>
+
+    <p><label for="address">Enter your address below: </label></p>
+    <textarea class="message" rows="5" cols="30" id="address"></textarea>
+
+
+    <fieldset class="language">
+        <legend>Enter the language you speak:</legend>
+    
+        <div>
+          <input type="checkbox" id="english" name="lang" value="English">
+          <label for="english">English</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="french" name="lang" value="French">
+          <label for="french">French</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="ukrainian" name="lang" value="Ukrainian">
+            <label for="ukrainian">Ukrainian</label>
+          </div>
+    </fieldset>
+
+    <button type="button" onclick="displayData()">Click Me!</button>
+
+
+    </form>
+
+    <div class="table-container"></div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
